@@ -7,7 +7,7 @@ def parse
   a = @email_addresses.split.collect do |address|
     address.split(",")
   end
-  a.flatten.uniq
+  a.uniq
 end
 
 end
